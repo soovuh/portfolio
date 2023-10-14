@@ -1,7 +1,21 @@
-import { Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./hocs/Layout";
+import Home from "./containers/Home";
+import Contacts from "./containers/Contacts";
+import Portfolio from "./containers/Portfolio";
+import Resume from "./containers/Resume";
 
-function App() {
-  return <div>Hello!</div>;
-}
+const App = () => (
+  <Router>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </Layout>
+  </Router>
+);
 
 export default App;
