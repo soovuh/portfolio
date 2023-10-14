@@ -42,7 +42,7 @@ const Navbar = (props) => {
           </Link>
         </div>
         <div className={styles.link_wrapper}>
-          <Link to="" className={styles.github}>
+          <Link to="https://github.com/soovuh" className={styles.github}>
             <ion-icon name="logo-github"></ion-icon>
           </Link>
         </div>
