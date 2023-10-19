@@ -48,7 +48,6 @@
   font-size: 2.3em;
   text-align: center;
   width: 90%;
-  /* background-color: #c2946e2c; */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -70,7 +69,6 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 20px;
-  /* background-color: #c2946e2c; */
 }
 
 .buttons {
@@ -82,6 +80,7 @@
 .buttons * {
   margin: 0 20px;
   text-decoration: none;
+  text-align: center;
   background-color: #005d74;
   border: 1px solid #005d74;
   border-radius: 20px;
@@ -116,5 +115,78 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 1070px) {
+  .wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: start;
+    font-size: 1.2em;
+    width: 80%;
+    height: 100%;
+  }
+
+  .buttons {
+    padding: 0;
+  }
+
+  .image_wrapper {
+    margin-right: 0;
+    width: 250px;
+    height: 250px;
+  }
+  .text {
+    width: 100%;
+  }
+}
+
+/* Media query for phones (up to 768px) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .image_wrapper {
+    margin-right: 0; /* Remove margin for the image */
+    width: 200px;
+    height: 200px; /* Adjust width for smaller screens */
+  }
+
+  .texxt * {
+    padding: 10px;
+  }
+
+  .text {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+  .text .about {
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .wrapper {
+    font-size: 0.7em;
+  }
+
+  .image_wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text .about {
+    font-size: 1.5em;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons * {
+    width: 150px;
+    margin: 0px 10px;
   }
 }

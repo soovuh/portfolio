@@ -38,8 +38,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
+  height: 100px;
   user-select: none;
+  z-index: 100;
 }
 
 .links {
@@ -72,7 +73,7 @@
 .github *,
 .link {
   color: black;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 .github *:hover,
@@ -93,5 +94,40 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: 10%;
+  height: 100px;
+}
+
+@media (max-width: 1070px) {
+  .footer {
+    height: 0;
+  }
+  .app {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px; /* Adjust the height for tablets */
+  }
+
+  .link,
+  .github *,
+  .current {
+    font-size: 1.2em; /* Adjust font size for tablets */
+    margin: 0px 10px; /* Adjust spacing for tablets */
+  }
+}
+
+/* Update font size and spacing for phones */
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px; /* Further adjust the height for phones */
+  }
+  .link,
+  .github *,
+  .current {
+    font-size: 1em; /* Further adjust font size for phones */
+    margin: 0px 5px; /* Further adjust spacing for phones */
+  }
 }
