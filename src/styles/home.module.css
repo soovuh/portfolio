@@ -52,7 +52,7 @@
   border-top-left-radius: 20px;
 }
 
-.text h2 {
+.text .resume_link {
   font-size: 1.9em;
   background-color: #005d74;
   color: #fafafa;
@@ -60,6 +60,14 @@
   text-align: center;
   padding: 15px;
   border-radius: 20px;
+  text-decoration: none;
+  border: 2px solid #005d74;
+  transition: background-color 0.5s, color 0.3s;
+}
+
+.text .resume_link:hover {
+  background-color: #fafafa;
+  color: #005d74;
 }
 
 .text .about {

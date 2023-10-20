@@ -1,0 +1,12 @@
+.resume_frame {
+  background-color: #fafafa;
+  border-radius: 20px;
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
