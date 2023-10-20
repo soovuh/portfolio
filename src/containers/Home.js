@@ -12,7 +12,9 @@ const Home = () => {
         </div>
         <div className={styles.text}>
           <h1>Hi, I'm Illia Klymenko</h1>
-          <h2>Backend Web Developer</h2>
+          <Link className={styles.resume_link} to={"/resume"}>
+            Backend Web Developer
+          </Link>
           <div className={styles.about}>
             I have been actively engaged in programming for 1 year. During this
             time, I have learned and applied several technologies and approaches
