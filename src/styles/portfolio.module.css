@@ -52,13 +52,6 @@
   user-select: none;
 }
 
-.projectLink {
-  margin-top: 10px;
-  text-decoration: none;
-  color: #0073e6;
-  width: 100%;
-}
-
 .projectLink:hover {
   text-decoration: underline;
 }
