@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/portfolio.module.css";
-import base_styles from "../styles/base.module.css";
 import { Link } from "react-router-dom";
 
 const ProjectBlock = ({
@@ -26,8 +25,10 @@ const ProjectBlock = ({
         </p>
         <div className={styles.block_footer}>
           <div className={styles.technologies}>
-            {technologies.map((technology) => (
-              <span className={styles.technology}>{technology}</span>
+            {technologies.map((technology, index) => (
+              <span key={index} className={styles.technology}>
+                {technology}
+              </span>
             ))}
           </div>
           <Link to={githubLink} className={styles.github}>

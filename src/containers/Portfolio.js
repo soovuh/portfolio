@@ -51,6 +51,7 @@ const Portfolio = () => {
   return (
     <div className={base_styles.base_wrapper}>
       <div className={styles.wrapper}>
+        <h1>Projects</h1>
         <div className={styles.portfolioContainer}>
           {projects.map((project, index) => (
             <ProjectBlock key={index} {...project} />

@@ -36,8 +36,6 @@
   width: 700px;
   height: max-content;
   justify-content: center;
-  opacity: 0;
-  animation: textAnim 1s ease 0.3s 1 normal forwards;
 }
 
 .text * {
@@ -50,6 +48,8 @@
   width: 90%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  opacity: 0;
+  animation: textAnim 1s ease 0.3s 1 normal forwards;
 }
 
 .text .resume_link {
@@ -63,6 +63,8 @@
   text-decoration: none;
   border: 2px solid #005d74;
   transition: background-color 0.5s, color 0.3s;
+  opacity: 0;
+  animation: textAnim 1s ease 0.5s 1 normal forwards;
 }
 
 .text .resume_link:hover {
@@ -77,12 +79,16 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 20px;
+  opacity: 0;
+  animation: textAnim 1s ease 0.7s 1 normal forwards;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   width: 90%;
+  opacity: 0;
+  animation: textAnim 1s ease 0.9s 1 normal forwards;
 }
 
 .buttons * {
