@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/base.module.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Navbar = (props) => {
   return (
@@ -43,7 +44,7 @@ const Navbar = (props) => {
         </div>
         <div className={styles.link_wrapper}>
           <Link to="https://github.com/soovuh" className={styles.github}>
-            <ion-icon name="logo-github"></ion-icon>
+            <GitHubIcon className={styles.icon} fontSize="large" />
           </Link>
         </div>
       </div>

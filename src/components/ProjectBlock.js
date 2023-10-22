@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/portfolio.module.css";
 import { Link } from "react-router-dom";
+import { Skeleton } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectBlock = ({
   title,
@@ -11,13 +13,27 @@ const ProjectBlock = ({
   technologies,
   important,
 }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
   return (
     <div className={`${styles.projectBlock} fadeInAnimation`}>
-      <div className={styles.projectImage}>
-        <Link className={styles.imgLink} to={projectLink}>
-          <img src={image} alt={title} />
-        </Link>
-      </div>
+      {isLoading ? (
+        <Skeleton animation="wave" variant="rect">
+          <div className={styles.projectImage}>
+            <Link className={styles.imgLink} to={projectLink}>
+              <img src={image} alt={title} onLoad={handleLoad} />
+            </Link>
+          </div>
+        </Skeleton>
+      ) : (
+        <div className={styles.projectImage}>
+          <Link className={styles.imgLink} to={projectLink}>
+            <img src={image} alt={title} onLoad={handleLoad} />
+          </Link>
+        </div>
+      )}
       <div>
         <h2>{title}</h2>
         <p>
@@ -32,7 +48,7 @@ const ProjectBlock = ({
             ))}
           </div>
           <Link to={githubLink} className={styles.github}>
-            <ion-icon name="logo-github"></ion-icon>
+            <GitHubIcon className={styles.icon} fontSize="large" />
           </Link>
         </div>
       </div>
