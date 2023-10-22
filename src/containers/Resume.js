@@ -27,7 +27,7 @@ const Resume = () => {
   return (
     <div className={base_styles.base_wrapper}>
       <div className={styles.wrapper}>
-        {isPDFLoading && (
+        {isPDFLoading ? (
           <Skeleton animation="wave" variant="rect">
             <iframe
               className={styles.resume_frame}
@@ -38,8 +38,7 @@ const Resume = () => {
               onLoad={handlePDFLoad}
             ></iframe>
           </Skeleton>
-        )}
-        {!isPDFLoading && (
+        ) : (
           <iframe
             className={styles.resume_frame}
             src="https://drive.google.com/file/d/1c3XySKAurb7ZoFdMxmMEk86rOaB5mNU9/preview"
