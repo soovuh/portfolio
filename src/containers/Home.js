@@ -1,6 +1,6 @@
 import base_styles from "../styles/base.module.css";
 import styles from "../styles/home.module.css";
-import photo from "../official-crop.jpg";
+import photo from "../images/official-crop.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {

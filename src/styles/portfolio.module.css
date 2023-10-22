@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: start;
+}
+
+.projectBlock {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.projectBlock div h2 {
+  margin: 10px 0;
+}
+
+.projectBlock div p {
+  font-size: 1.2em;
+}
+
+.projectImage img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.projectImage img:hover {
+  transform: scale(1.05);
+}
+
+.imgLink {
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.projectLink {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+.github * {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.github * {
+  color: black;
+  transition: color 0.3s;
+}
+
+.github *:hover {
+  color: #005d74;
+}
+
+.block_footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap; /* Allow technologies to wrap to the next line */
+  margin-top: 10px;
+}
+
+.technology {
+  font-size: 0.9em;
+  padding: 10px 20px;
+  background-color: #005d74;
+  color: #fafafa;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px; /* Add some bottom margin to separate technologies */
+}
+
+/* Portfolio.module.css */
+.portfolioContainer {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 40px;
+  padding: 20px;
+  justify-items: center; /* Center align items in each column */
+}
