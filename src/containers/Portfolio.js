@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectBlock from "../components/ProjectBlock";
 import base_styles from "../styles/base.module.css";
 import styles from "../styles/portfolio.module.css";
 import shoeShopImg from "../images/shoe_shop.png";
 import TicTacToeImg from "../images/tic_tac_toe.png";
 import PhotograperPortfolioImg from "../images/photographer_portfolio.png";
+import "../styles/animations.css";
 
 const Portfolio = () => {
   const projects = [
@@ -48,6 +49,12 @@ const Portfolio = () => {
         "You need to wait a few minutes after clicking on the image because it’s a free hosting site and application rebuilt after 15 minutes inactive mode.",
     },
   ];
+  useEffect(() => {
+    const projectBlocks = document.querySelectorAll(".fadeInAnimation");
+    projectBlocks.forEach((block, index) => {
+      block.style.animation = `fadeIn 1s ${index * 0.5}s forwards`;
+    });
+  }, []);
   return (
     <div className={base_styles.base_wrapper}>
       <div className={styles.wrapper}>

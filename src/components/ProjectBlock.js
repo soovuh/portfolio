@@ -12,7 +12,7 @@ const ProjectBlock = ({
   important,
 }) => {
   return (
-    <div className={styles.projectBlock}>
+    <div className={`${styles.projectBlock} fadeInAnimation`}>
       <div className={styles.projectImage}>
         <Link className={styles.imgLink} to={projectLink}>
           <img src={image} alt={title} />

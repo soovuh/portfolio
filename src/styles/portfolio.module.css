@@ -9,6 +9,8 @@
 .wrapper h1 {
   font-size: 3em;
   margin: 5px 0;
+  animation: hAnim 2s ease 0s 1 normal forwards;
+  opacity: 0;
 }
 
 .projectBlock {
@@ -20,6 +22,7 @@
   margin: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
+  opacity: 0;
 }
 
 .projectBlock div h2 {
@@ -53,6 +56,7 @@
   margin-top: 10px;
   text-decoration: none;
   color: #0073e6;
+  width: 100%;
 }
 
 .projectLink:hover {
@@ -134,5 +138,16 @@
   }
   .technology {
     font-size: 0.7em;
+  }
+}
+@keyframes hAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
