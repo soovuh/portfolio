@@ -102,7 +102,7 @@
     height: 0;
   }
   .app {
-    justify-content: start;
+    justify-content: center;
   }
 }
 
