@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <div className={styles.buttons}>
             <Link to="/contacts">Contact me</Link>
-            <Link to="/portfolio">My projects</Link>
+            <Link to="/projects">My projects</Link>
           </div>
         </div>
       </div>

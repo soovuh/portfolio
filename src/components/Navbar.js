@@ -16,9 +16,9 @@ const Navbar = (props) => {
         </div>
         <div className={styles.link_wrapper}>
           <Link
-            to="/portfolio"
+            to="/projects"
             className={
-              props.path === "/portfolio" ? styles.current : styles.link
+              props.path === "/projects" ? styles.current : styles.link
             }
           >
             Projects
