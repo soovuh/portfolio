@@ -9,14 +9,24 @@ const Contacts = () => {
   return (
     <div className={base_styles.base_wrapper}>
       <div className={styles.wrapper}>
-        <Link to={""}>
-          <LinkedInIcon fontSize="large" />
+        <h1>Contact me!</h1>
+        <Link
+          className={styles.contact_btn}
+          to={"https://www.linkedin.com/in/illia-klymenko/"}
+        >
+          LinkedIn
+          <LinkedInIcon className={styles.icon} fontSize="large" />
         </Link>
-        <Link to={""}>
-          <TelegramIcon fontSize="large" />
+        <Link className={styles.contact_btn} to={"https://t.me/soovuh"}>
+          Telegram
+          <TelegramIcon className={styles.icon} fontSize="large" />
         </Link>
-        <Link to={""}>
-          <MailIcon fontSize="large" />
+        <Link
+          className={styles.contact_btn}
+          to={"mailto:klymenko.illia.dev@gmail.com"}
+        >
+          Mail
+          <MailIcon className={styles.icon} fontSize="large" />
         </Link>
       </div>
     </div>
