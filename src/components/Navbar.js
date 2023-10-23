@@ -8,8 +8,10 @@ const Navbar = (props) => {
       <div className={styles.links}>
         <div className={styles.link_wrapper}>
           <Link
-            to="/"
-            className={props.path === "/" ? styles.current : styles.link}
+            to="/portfolio"
+            className={
+              props.path === "/portfolio" ? styles.current : styles.link
+            }
           >
             Home
           </Link>
