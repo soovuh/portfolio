@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./hocs/Layout";
 import Home from "./containers/Home";
 import Contacts from "./containers/Contacts";
@@ -9,7 +9,7 @@ const App = () => (
   <Router basename="/portfolio">
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/portfolio" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/projects" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
