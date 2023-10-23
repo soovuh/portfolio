@@ -6,10 +6,10 @@ import Portfolio from "./containers/Portfolio";
 import Resume from "./containers/Resume";
 
 const App = () => (
-  <Router>
+  <Router basename="/portfolio">
     <Layout>
       <Routes>
-        <Route path="/portfolio" element={<Home />} />
+        <Route exact path="/portfolio" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/projects" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
