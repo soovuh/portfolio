@@ -47,9 +47,11 @@ const ProjectBlock = ({
               </span>
             ))}
           </div>
+          {githubLink &&
           <Link to={githubLink} className={styles.github}>
             <GitHubIcon className={styles.icon} fontSize="large" />
-          </Link>
+          </Link>}
+
         </div>
       </div>
     </div>

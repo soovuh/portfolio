@@ -4,11 +4,56 @@ import base_styles from "../styles/base.module.css";
 import styles from "../styles/portfolio.module.css";
 import shoeShopImg from "../images/shoe_shop.png";
 import TicTacToeImg from "../images/tic_tac_toe.png";
+import UkraineMapCreatorImg from "../images/ukraine_map_creator.png"
+import USavedWebsiteImg from "../images/u_saved_website.png"
+import UReportsImg from "../images/u_reports.png"
 import PhotograperPortfolioImg from "../images/photographer_portfolio.png";
 import "../styles/animations.css";
 
 const Portfolio = () => {
   const projects = [
+    {
+      title: "U-Reports Platform",
+      description: "Contributed to the development of a donor-focused reporting platform for large charitable foundations, improving transparency and engagement. The U-Reports Platform utilizes cutting-edge technologies such as Django, Django Rest Framework, Bootstrap, JavaScript, CSS, HTML, Leaflet.js, and pandas to provide a seamless experience for donors. Through this platform, donors can access comprehensive reports, tabulated data, high-resolution photos, interactive maps, and intuitive dashboards with ease and efficiency.",
+      projectLink: "https://u-reports.org/",
+      githubLink: "",
+      image: UReportsImg,
+      technologies: [
+        "Django",
+        "Folium",
+        "Bootstrap",
+        "CSS",
+      ],
+    },
+    {
+      title: "U-Saved Website Django App",
+      description:
+        "As a member of U-Saved, I took the initiative to leverage my web development skills to establish a digital footprint for our charitable cause. Employing Django and Bootstrap frameworks, I crafted a dynamic website, serving as our organization's virtual calling card. Moreover, in addressing the need for visualizing CO activity through interactive mapping solutions, I harnessed the capabilities of the Folium framework, ensuring comprehensive data representation and user engagement.",
+      projectLink: "https://u-saved.co/",
+      githubLink: "",
+      image: USavedWebsiteImg,
+      technologies: [
+        "Django",
+        "Folium",
+        "Bootstrap",
+        "CSS",
+      ],
+    },
+    {
+      title: "Ukraine Map Creator Flask App",
+      description:
+        "Ukraine Map Creator is a web app utilizing Flask, SQLAlchemy, Folium, Bootstrap, and pandas. It enables users to easily generate customized maps with markers based on uploaded XLSX files containing latitude, longitude, and labels. Users can select column names, specify label uniqueness, and customize marker icons and colors. Maps can be downloaded as HTML or images, with registered users having the option to save maps to their dashboard for future access.",
+      projectLink: "https://soovuh.pythonanywhere.com/",
+      githubLink: "https://github.com/soovuh/Ukraine-Map-Creator",
+      image: UkraineMapCreatorImg,
+      technologies: [
+        "Flask",
+        "SQLAlchemy",
+        "Folium",
+        "Pandas",
+        "Bootstrap",
+      ],
+    },
     {
       title: "Tic-Tac-Toe Online",
       description:

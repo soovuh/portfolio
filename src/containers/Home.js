@@ -16,10 +16,7 @@ const Home = () => {
             Backend Web Developer
           </Link>
           <div className={styles.about}>
-            I have been actively engaged in programming for 1 year. During this
-            time, I have learned and applied several technologies and approaches
-            to creating web applications. I continuously enhance my knowledge
-            every day and am excited to work on even more interesting projects.
+          I have been actively engaged in programming for 1.5 years. During this time I have learned and applied many technologies and approaches to creating web applications and data processing. I continuously enhance my knowledge every day and am excited to work on even more interesting projects
           </div>
           <div className={styles.buttons}>
             <Link to="/contacts">Contact me</Link>

@@ -87,9 +87,11 @@
 
 .technology {
   font-size: 0.9em;
+  font-weight: bold;
   padding: 10px 20px;
-  background-color: #005d74;
-  color: #fafafa;
+  background-color: #fafafa;
+  color: #005d74;
+  border: 2px solid #005d74;
   border-radius: 20px;
   margin-right: 5px;
   margin-bottom: 5px;
